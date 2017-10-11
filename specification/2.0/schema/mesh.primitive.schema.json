@@ -26,6 +26,7 @@
             "description": "The type of primitives to render.",
             "default": 4,
             "gltf_detailedDescription": "The type of primitives to render. All valid values correspond to WebGL enums.",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 0 ],
@@ -54,9 +55,6 @@
                 {
                     "enum": [ 6 ],
                     "description": "TRIANGLE_FAN"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },

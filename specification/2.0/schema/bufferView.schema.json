@@ -32,6 +32,7 @@
         "target": {
             "description": "The target that the GPU buffer should be bound to.",
             "gltf_webgl": "`bindBuffer()`",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 34962 ],
@@ -40,9 +41,6 @@
                 {
                     "enum": [ 34963 ],
                     "description": "ELEMENT_ARRAY_BUFFER"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },

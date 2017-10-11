@@ -13,15 +13,13 @@
             "gltf_uriType": "image"
         },
         "mimeType": {
+            "type": "string",
             "anyOf": [
                 {
                     "enum": [ "image/jpeg" ]
                 },
                 {
                     "enum": [ "image/png" ]
-                },
-                {
-                    "type": "string"
                 }
             ],
             "description": "The image's MIME type."

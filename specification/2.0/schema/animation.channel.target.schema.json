@@ -11,6 +11,7 @@
         },
         "path": {
             "description": "The name of the node's TRS property to modify, or the \"weights\" of the Morph Targets it instantiates.",
+            "type": "string",
             "anyOf": [
                 {
                     "enum": [ "translation" ]
@@ -23,9 +24,6 @@
                 },
                 {
                     "enum": [ "weights" ]
-                },
-                {
-                    "type": "string"
                 }
             ]
         },

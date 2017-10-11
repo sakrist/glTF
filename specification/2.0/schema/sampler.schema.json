@@ -9,6 +9,7 @@
             "description": "Magnification filter.",
             "gltf_detailedDescription": "Magnification filter.  Valid values correspond to WebGL enums: `9728` (NEAREST) and `9729` (LINEAR).",
             "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_MAG_FILTER",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 9728 ],
@@ -17,9 +18,6 @@
                 {
                     "enum": [ 9729 ],
                     "description": "LINEAR"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },
@@ -27,6 +25,7 @@
             "description": "Minification filter.",
             "gltf_detailedDescription": "Minification filter.  All valid values correspond to WebGL enums.",
             "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_MIN_FILTER",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 9728 ],
@@ -51,9 +50,6 @@
                 {
                     "enum": [ 9987 ],
                     "description": "LINEAR_MIPMAP_LINEAR"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },
@@ -62,6 +58,7 @@
             "default": 10497,
             "gltf_detailedDescription": "s wrapping mode.  All valid values correspond to WebGL enums.",
             "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_WRAP_S",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 33071 ],
@@ -74,9 +71,6 @@
                 {
                     "enum": [ 10497 ],
                     "description": "REPEAT"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },
@@ -85,6 +79,7 @@
             "default": 10497,
             "gltf_detailedDescription": "t wrapping mode.  All valid values correspond to WebGL enums.",
             "gltf_webgl": "`texParameterf()` with pname equal to TEXTURE_WRAP_T",
+            "type": "integer",
             "anyOf": [
                 {
                     "enum": [ 33071 ],
@@ -97,9 +92,6 @@
                 {
                     "enum": [ 10497 ],
                     "description": "REPEAT"
-                },
-                {
-                    "type": "integer"
                 }
             ]
         },
