@@ -1,0 +1,284 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "3D4M_compressed_texture extension",
+    "type": "object",
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default" : 0,
+            "description": "Texture width size in pixels."
+        },
+        "height": {
+            "type": "integer",
+            "default" : 0,
+            "description": "Texture height size in pixels."
+        },
+        "sources": {
+            "type": "array",
+            "description": "Texture index of bufferView used for each level of texture. First source representing level 0. Each next is divide by 2 of previous texture size. For example 0 level is 1024, next is 512 and next 256 ans so on.",
+            "items": {
+                "type": "integer"
+            },
+            "minItems": 1
+        },
+        "target": {
+            "description": "Texture target.",
+            "default" : 3553,
+            "anyOf": [
+                {
+                    "enum": [ 3552 ],
+                    "description": "TEXTURE_1D"
+                },
+                {
+                    "enum": [ 3553 ],
+                    "description": "TEXTURE_2D"
+                },
+                {
+                    "enum": [ 32879 ],
+                    "description": "TEXTURE_3D"
+                },
+                {
+                    "enum": [ 34067 ],
+                    "description": "TEXTURE_CUBE_MAP"
+                },
+                {
+                    "enum": [ 35864 ],
+                    "description": "TEXTURE_1D_ARRAY"
+                },
+                {
+                    "enum": [ 35866 ],
+                    "description": "TEXTURE_2D_ARRAY"
+                },
+                {
+                    "enum": [ 36873 ],
+                    "description": "TEXTURE_CUBE_MAP_ARRAY"
+                },
+                {
+                    "type": "integer"
+                }
+            ]
+        },
+        "compression": {
+            "description": "Compression type.",
+            "anyOf": [
+                {
+                    "enum": [ 36196 ],
+                    "description": "ETC1_RGB8_OES"
+                },
+                {
+                    "enum": [ 37492 ],
+                    "description": "COMPRESSED_RGB8_ETC2"
+                },
+                {
+                    "enum": [ 37493 ],
+                    "description": "COMPRESSED_SRGB8_ETC2"
+                },
+                {
+                    "enum": [ 37494 ],
+                    "description": "COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+                },
+                {
+                    "enum": [ 37495 ],
+                    "description": "COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+                },
+                {
+                    "enum": [ 37496 ],
+                    "description": "COMPRESSED_RGBA8_ETC2_EAC"
+                },
+                {
+                    "enum": [ 37497 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ETC2_EAC"
+                },
+                {
+                    "enum": [ 35412 ],
+                    "description": "COMPRESSED_SRGB_PVRTC_2BPPV1"
+                },
+                {
+                    "enum": [ 35413 ],
+                    "description": "COMPRESSED_SRGB_PVRTC_4BPPV1"
+                },
+                {
+                    "enum": [ 35414 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_PVRTC_2BPPV1"
+                },
+                {
+                    "enum": [ 35415 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_PVRTC_4BPPV1"
+                },
+                {
+                    "enum": [ 35840 ],
+                    "description": "COMPRESSED_RGB_PVRTC_4BPPV1"
+                },
+                {
+                    "enum": [ 35841 ],
+                    "description": "COMPRESSED_RGB_PVRTC_2BPPV1"
+                },
+                {
+                    "enum": [ 35842 ],
+                    "description": "COMPRESSED_RGBA_PVRTC_4BPPV1"
+                },
+                {
+                    "enum": [ 35843 ],
+                    "description": "COMPRESSED_RGBA_PVRTC_2BPPV1"
+                },
+                {
+                    "enum": [ 37808 ],
+                    "description": "COMPRESSED_RGBA_ASTC_4x4"
+                },
+                {
+                    "enum": [ 37809 ],
+                    "description": "COMPRESSED_RGBA_ASTC_5x4"
+                },
+                {
+                    "enum": [ 37810 ],
+                    "description": "COMPRESSED_RGBA_ASTC_5x5"
+                },
+                {
+                    "enum": [ 37811 ],
+                    "description": "COMPRESSED_RGBA_ASTC_6x5"
+                },
+                {
+                    "enum": [ 37812 ],
+                    "description": "COMPRESSED_RGBA_ASTC_6x6"
+                },
+                {
+                    "enum": [ 37813 ],
+                    "description": "COMPRESSED_RGBA_ASTC_8x5"
+                },
+                {
+                    "enum": [ 37814 ],
+                    "description": "COMPRESSED_RGBA_ASTC_8x6"
+                },
+                {
+                    "enum": [ 37815 ],
+                    "description": "COMPRESSED_RGBA_ASTC_8x8"
+                },
+                {
+                    "enum": [ 37816 ],
+                    "description": "COMPRESSED_RGBA_ASTC_10x5"
+                },
+                {
+                    "enum": [ 37817 ],
+                    "description": "COMPRESSED_RGBA_ASTC_10x6"
+                },
+                {
+                    "enum": [ 37818 ],
+                    "description": "COMPRESSED_RGBA_ASTC_10x8"
+                },
+                {
+                    "enum": [ 37819 ],
+                    "description": "COMPRESSED_RGBA_ASTC_10x10"
+                },
+                {
+                    "enum": [ 37820 ],
+                    "description": "COMPRESSED_RGBA_ASTC_12x10"
+                },
+                {
+                    "enum": [ 37821 ],
+                    "description": "COMPRESSED_RGBA_ASTC_12x12"
+                },
+                {
+                    "enum": [ 37840 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_4x4"
+                },
+                {
+                    "enum": [ 37841 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_5x4"
+                },
+                {
+                    "enum": [ 37842 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_5x5"
+                },
+                {
+                    "enum": [ 37843 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_6x5"
+                },
+                {
+                    "enum": [ 37844 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_6x6"
+                },
+                {
+                    "enum": [ 37845 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_8x5"
+                },
+                {
+                    "enum": [ 37846 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_8x6"
+                },
+                {
+                    "enum": [ 37847 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_8x8"
+                },
+                {
+                    "enum": [ 37848 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_10x5"
+                },
+                {
+                    "enum": [ 37849 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_10x6"
+                },
+                {
+                    "enum": [ 37850 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_10x8"
+                },
+                {
+                    "enum": [ 37851 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_10x10"
+                },
+                {
+                    "enum": [ 37852 ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_12x10"
+                },
+                {
+                    "enum": [ 37853  ],
+                    "description": "COMPRESSED_SRGB8_ALPHA8_ASTC_12x12"
+                },
+                {
+                    "enum": [ 33776 ],
+                    "description": "COMPRESSED_RGB_S3TC_DXT1"
+                },
+                {
+                    "enum": [ 33777 ],
+                    "description": "COMPRESSED_RGBA_S3TC_DXT1"
+                },
+                {
+                    "enum": [ 33778 ],
+                    "description": "COMPRESSED_RGBA_S3TC_DXT3"
+                },
+                {
+                    "enum": [ 33779 ],
+                    "description": "COMPRESSED_RGBA_S3TC_DXT5"
+                },
+                {
+                    "enum": [ 35916 ],
+                    "description": "COMPRESSED_SRGB_S3TC_DXT1"
+                },
+                {
+                    "enum": [ 35917 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_S3TC_DXT1"
+                },
+                {
+                    "enum": [ 35918 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_S3TC_DXT3"
+                },
+                {
+                    "enum": [ 35919 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_S3TC_DXT5"
+                },
+                {
+                    "enum": [ 36492 ],
+                    "description": "COMPRESSED_RGBA_BPTC_UNORM"
+                },
+                {
+                    "enum": [ 36493 ],
+                    "description": "COMPRESSED_SRGB_ALPHA_BPTC_UNORM"
+                },
+                {
+                    "type": "integer"
+                }
+            ]
+        }
+    },
+    "additionalProperties": false,
+    "required": [ "width", "height", "sources", "compression" ]
+}
