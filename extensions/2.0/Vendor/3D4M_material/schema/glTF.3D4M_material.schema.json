@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "3D4M_material_extension",
+    "type": "object",
+    "properties": {
+        "ambient": {
+            "description": "Blinn ambient color.",
+            "type": "string"
+        },
+        "specular": {
+            "description": "Blinn specular color.",
+            "type": "string"
+        },
+        "diffuse": {
+            "description": "Blinn diffuse color.",
+            "type": "string"
+        },
+        "fresnel": {
+            "description": "PBR fresnel reflectance at 0 degrees for material.",
+            "type": "number"
+        },
+        "defaultOpacity": {
+            "description": "Default opacity of material",
+            "type": "number"
+        },
+        "shininess": {
+            "description": "Shininess value for material",
+            "type": "number"
+        },
+        "reflection": {
+            "description": "Environment reflection coefficient",
+            "type": "number"
+        },
+        "illumination": {
+            "description": "Illumination model to use for material.",
+            "type": "number"
+        },
+        "illuminationColor": {
+            "description": "Illumination model with color",
+            "type": "string"
+        },
+        "sssFalloff": {
+            "description": "sssFalloff",
+            "type": "number"
+        },
+        "sssWidth": {
+            "description": "sssWidth",
+            "type": "number"
+        },
+        "sssThickness": {
+            "description": "sssThickness",
+            "type": "number"
+        },
+        "sssIntensity": {
+            "description": "sssIntensity",
+            "type": "number"
+        },
+        "sssColor": {
+            "description": "sssColor",
+            "type": "string"
+        },
+        "cullMode": {
+            "description": "Determines the culling mode of the receiver.",
+            "type": "integer"
+        },
+        "defines": {
+            "description": "Shader defines.",
+            "items": {
+                "type": "integer" 
+            },
+            "type": "array"
+        },
+        "vshExtensions": {
+            "description": "Vertex shader extensions.",
+            "type": "dictionary"
+        },
+        "fshExtensions": {
+            "description": "Fragment shader extensions.",
+            "type": "dictionary"
+        }
+    },
+    "additionalProperties": false,
+    "required": []
+}
