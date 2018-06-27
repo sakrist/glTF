@@ -10,6 +10,7 @@
 
 |   |Type|Description|Required|
 |---|----|-----------|--------|
+|**id**|`string`|Identifier.| :white_check_mark: Yes|
 |**ambient**|`string`|Blinn ambient color.|No|
 |**specular**|`string`|Blinn specular color.|No|
 |**diffuse**|`string`|Blinn diffuse color.|No|
@@ -30,6 +31,13 @@
 |**fshExtensions**|`dictionary`|Fragment shader extensions.|No|
 
 Additional properties are not allowed.
+
+#### 3d4m_material_extension.id :white_check_mark: 
+
+Identifier.
+
+* **Type**: `string`
+* **Required**: Yes
 
 #### 3d4m_material_extension.ambient
 

@@ -3,6 +3,10 @@
     "title": "3D4M_material_extension",
     "type": "object",
     "properties": {
+    	"id": {
+            "description": "Identifier.",
+            "type": "string"
+        },
         "ambient": {
             "description": "Blinn ambient color.",
             "type": "string"
@@ -80,5 +84,5 @@
         }
     },
     "additionalProperties": false,
-    "required": []
+    "required": ["id"]
 }
