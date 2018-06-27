@@ -11,8 +11,7 @@
 |   |Type|Description|Required|
 |---|----|-----------|--------|
 |**bounds**|`string`|Precalculated bounds of the mesh.| :white_check_mark: Yes|
-|**radius**|`number`|Precalculated radius of the mesh.|No|
-|**center**|`string`|Precalculated center of the mesh.|No|
+|**radius**|`number`|Precalculated radius of the mesh.| :white_check_mark: Yes|
 
 Additional properties are not allowed.
 
@@ -23,18 +22,11 @@ Precalculated bounds of the mesh.
 * **Type**: `string`
 * **Required**: Yes
 
-#### 3d4m_mesh_extension.radius
+#### 3d4m_mesh_extension.radius :white_check_mark: 
 
 Precalculated radius of the mesh.
 
 * **Type**: `number`
-* **Required**: No
-
-#### 3d4m_mesh_extension.center
-
-Precalculated center of the mesh.
-
-* **Type**: `string`
-* **Required**: No
+* **Required**: Yes
 
 

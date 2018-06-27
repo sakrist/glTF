@@ -10,12 +10,8 @@
         "radius": {
             "description": "Precalculated radius of the mesh.",
             "type": "number"
-        },
-        "center": {
-            "description": "Precalculated center of the mesh.",
-            "type": "string"
         }
     },
     "additionalProperties": false,
-    "required": ["bounds"]
+    "required": ["bounds", "radius"]
 }
