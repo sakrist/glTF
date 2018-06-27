@@ -9,9 +9,9 @@
         },
         "radius": {
             "description": "Precalculated radius of the mesh.",
-            "type": "string"
+            "type": "number"
         }
     },
     "additionalProperties": false,
-    "required": ["bounds"]
+    "required": ["bounds", "radius"]
 }
