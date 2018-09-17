@@ -52,7 +52,7 @@ Below is an example of what a part of a glTF file may look like if  extension is
         "sampler": 0,
         "extensions": {
             "3D4M_compressed_texture": {
-                "width" : 1024.
+                "width" : 1024,
                 "height" :  1024,
                 "target" : 3553,
                 "sources" : [ 10, 11, 12, 13, 14, 15 ],
