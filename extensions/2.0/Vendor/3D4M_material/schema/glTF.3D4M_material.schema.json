@@ -19,6 +19,18 @@
             "description": "Blinn diffuse color.",
             "type": "string"
         },
+        "highlightDiffuse": {
+            "description": "Highlight color of material's diffuse color, where alpha is highlight value range 0..1. 0 - no highlight, 1 - highlight fully.",
+            "type": "string"
+        },
+        "shouldCopySpotTexture": {
+        	"description": "Boolean value that indicates whether material should retain its own copy of spot texture rather than using shared instance.",
+            "type": "boolean"
+        },
+        "fillingMaterial": {
+            "description": "Identifier of filling material.",
+            "type": "string"
+        },
         "fresnel": {
             "description": "PBR fresnel reflectance at 0 degrees for material.",
             "type": "number"
