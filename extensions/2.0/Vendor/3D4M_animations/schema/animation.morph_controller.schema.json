@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
     "definitions": {},
-    "title" : "Morph Controller",
+    "title" : "3D4M_animation_morph_controller",
     "description" : "Animation Morph Controller container.",
     "type": "object",
     "properties": {

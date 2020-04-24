@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
     "definitions": {},
-    "title" : "Animation",
+    "title" : "3D4M_animation_extension",
     "description" : "Animation container.",
     "type": "object",
     "properties": {
