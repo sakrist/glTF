@@ -34,7 +34,7 @@
                 "$ref": "animation.controller.schema.json"
             },
             "type": "array"
-        }
+        },
         "morph_controllers" : {
             "description": "List of all morph controllers of the Animation.",
             "items": {
