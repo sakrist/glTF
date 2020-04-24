@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
     "definitions": {},
-    "title" : "Animation Player",
-    "description" : "Animation Player container.",
+    "title" : "Animation",
+    "description" : "Animation container.",
     "type": "object",
     "properties": {
         "name" : {

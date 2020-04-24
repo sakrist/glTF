@@ -1,7 +1,6 @@
 ## Objects
 * [`3D4M_material_extension`](#reference-3d4m_material_extension) (root object)
 
-
 ---------------------------------------
 <a name="reference-3d4m_material_extension"></a>
 ### 3D4M_material_extension

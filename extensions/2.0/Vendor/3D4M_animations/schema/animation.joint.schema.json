@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {},
+    "title" : "Animation Joint",
+    "description" : "Animation Joint container.",
+    "type": "object",
+    "properties": {
+        "name" : {
+            "description": "Name of the Joint",
+            "type": "string"
+        },
+        "id" : {
+            "description": "Identifier of the Joint.",
+            "type": "string"
+        },
+        "index" : {
+            "description": "Number joint position in the joints array",
+            "type": "integer",
+            "default": 0
+        },
+        "count" : {
+            "description": "Number of global transform matrices",
+            "type": "integer",
+            "default": 0
+        },
+        "matrices" : {
+            "description": "Data with the Joint global transform matrices.",
+            "type": "string"
+        }
+    },
+    "required" : ["id", "index", "count", "matrices"]
+}

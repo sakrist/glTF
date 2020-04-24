@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {},
+    "title" : "Animation Controller",
+    "description" : "Animation Controller container.",
+    "type": "object",
+    "properties": {
+        "target" : {
+            "description": "Link to the geometry animated by the Controller. id of Geometry. (consider to deprecate and use index position)",
+            "type": "string"
+        },
+        "id" : {
+            "description": "Identifier of the Controller.",
+            "type": "string"
+        },
+        "jointsCount" : {
+            "description": "Number of joints that effect by the Controller",
+            "type": "integer",
+            "default": 0
+        },
+        "jointsIndices" : {
+            "description": "Indices of effecting joints. Saved as data base64.",
+            "type": "string"
+        }
+    },
+    "required" : ["id", "target"]
+}

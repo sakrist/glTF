@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {},
+    "title" : "Morph Controller",
+    "description" : "Animation Morph Controller container.",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "description": "Identifier of the Morph Controller.",
+            "type": "string"
+        },
+        "matricesCount" : {
+            "description": "Number of original morph progress matrices",
+            "type": "integer",
+            "default": 0
+        },
+        "matrices" : {
+            "description": "Original morph progress matrices",
+            "type": "string"
+        },
+        "targetsCount" : {
+            "description": "Amount of morph targets in morph controllers.",
+            "type": "integer",
+            "default": 0
+        }
+    },
+    "required" : ["identifier"]
+}
