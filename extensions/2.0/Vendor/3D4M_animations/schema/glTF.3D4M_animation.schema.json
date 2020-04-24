@@ -24,14 +24,21 @@
         "joints" : {
             "description": "List of all joints of the Animation.",
             "items": {
-                "$ref": "animation_joint.json"
+                "$ref": "animation.joint.schema.json"
             },
             "type": "array"
         },
         "controllers" : {
             "description": "List of all controllers of the Animation.",
             "items": {
-                "$ref": "animation_controller.json"
+                "$ref": "animation.controller.schema.json"
+            },
+            "type": "array"
+        }
+        "morph_controllers" : {
+            "description": "List of all morph controllers of the Animation.",
+            "items": {
+                "$ref": "animation.morph_controller.schema.json"
             },
             "type": "array"
         }
